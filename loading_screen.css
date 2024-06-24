@@ -1,0 +1,32 @@
+/* loading_screen.css */
+body {
+  background-color: #000;
+  color: #0f0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.loading-text {
+  font-size: 24px;
+  text-align: center;
+  padding-top: 20%;
+}
+
+.loading-text::after {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background: #0f0;
+  margin-left: 10px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
